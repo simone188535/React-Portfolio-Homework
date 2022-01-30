@@ -1,8 +1,11 @@
 import Navigation from "./Navigation";
-const Header = () => {
+const Header = ({ displayContent, changeDisplayContent }) => {
   return (
     <nav className="nav-bar">
-        <Navigation/>
+      <Navigation
+        displayContent={displayContent}
+        changeDisplayContent={changeDisplayContent}
+      />
     </nav>
   );
 };

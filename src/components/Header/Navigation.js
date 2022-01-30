@@ -1,4 +1,6 @@
-const Navigation = () => {
+const Navigation = ({ displayContent, changeDisplayContent }) => {
+
+    // ADD EVENT DELEGATION!!!!!!
   return (
     <nav className="navbar navbar-expand-md">
       <div className="container-fluid">
