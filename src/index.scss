@@ -19,19 +19,11 @@
     font-family: 'Barlow', sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
 .nav-bar {
     background-color: var(--orange-red-alpha);
-    
-    // &__ {
-    //     &wrapper{
-    //         height: 50px;
-    //     }
-    //     &item {
-    //         color: var(--white);
-    //         background-color: transparent;
-    //         border: 0;
-    //         height: 100%;
-
-    //     }
-    // }
+    color: var(--white);
 }
