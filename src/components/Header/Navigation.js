@@ -1,13 +1,17 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 const Navigation = ({ displayContent, changeDisplayContent }) => {
   const navItemText = ["About Me", "Portfolio", "Contact", "Resume"];
-  const navItems = navItemText.map(
-    (item, index) =>
-      index !== displayContent && (
-        <li className="nav-item mx-2" data-list-item-index={index} key={index}>
-          {item}
-        </li>
-      )
-  );
+  const navItems = navItemText.map((item, index) => (
+    <li
+      className={`nav-item mx-2 ${index === displayContent ? "active" : ""}`}
+      data-list-item-index={index}
+      key={index}
+    >
+      {item}
+    </li>
+  ));
 
   const listItemOnClick = (event) => {
     let target = event.target;
@@ -19,7 +23,7 @@ const Navigation = ({ displayContent, changeDisplayContent }) => {
   };
 
   return (
-    <nav className="navbar navbar-expand-md navbar-light">
+    <nav className="navbar navbar-expand-md">
       <div className="container-fluid">
         <span className="navbar-brand">Simone Anthony</span>
         <button
@@ -31,7 +35,11 @@ const Navigation = ({ displayContent, changeDisplayContent }) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon pt-1">
+            <span>
+              <FontAwesomeIcon icon={faBars} />
+            </span>
+          </span>
         </button>
         <div
           className="collapse navbar-collapse justify-content-end"

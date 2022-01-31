@@ -19,7 +19,8 @@
     font-family: 'Barlow', sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -29,5 +30,16 @@ html, body {
 
     .navbar-toggler .navbar-toggler-icon {
         color: var(--white);
+    }
+
+    .navbar-nav {
+        cursor: pointer;
+
+        .nav-item {
+            &.active,
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
