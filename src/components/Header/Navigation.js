@@ -1,8 +1,16 @@
 const Navigation = ({ displayContent, changeDisplayContent }) => {
 
-    // ADD EVENT DELEGATION!!!!!!
+    const listItemOnClick = (event) => {
+        let target = event.target; 
+        
+        if (target.matches('.nav-item')) {
+            const dataAttr = target.dataset.listItemIndex;
+            changeDisplayContent(dataAttr);
+        }
+    }
+
   return (
-    <nav className="navbar navbar-expand-md">
+    <nav className="navbar navbar-expand-md navbar-light">
       <div className="container-fluid">
         <span className="navbar-brand">
           Simone Anthony
@@ -19,26 +27,18 @@ const Navigation = ({ displayContent, changeDisplayContent }) => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarToggler">
-          <ul className="navbar-nav">
-            <li className="nav-item mx-2">
-              <span>
+          <ul className="navbar-nav" onClick={listItemOnClick}>
+            <li className="nav-item mx-2" data-list-item-index="0">
                 About Me
-              </span>
             </li>
-            <li className="nav-item mx-2">
-              <span>
+            <li className="nav-item mx-2" data-list-item-index="1">
                 Portfolio
-              </span>
             </li>
-            <li className="nav-item mx-2">
-              <span>
+            <li className="nav-item mx-2" data-list-item-index="2">
                 Contact
-              </span>
             </li>
-            <li className="nav-item mx-2">
-              <span>
+            <li className="nav-item mx-2" data-list-item-index="3">
                 Resume
-              </span>
             </li>
           </ul>
         </div>

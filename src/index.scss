@@ -26,4 +26,8 @@ html, body {
 .nav-bar {
     background-color: var(--orange-red-alpha);
     color: var(--white);
+
+    .navbar-toggler .navbar-toggler-icon {
+        color: var(--white);
+    }
 }

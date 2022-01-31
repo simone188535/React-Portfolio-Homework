@@ -9,12 +9,12 @@ const displayDetails = [
     component: <AboutMe />,
   },
   {
-    header: "Contact",
-    component: <Contact />,
-  },
-  {
     header: "Portfolio",
     component: <Portfolio />,
+  },
+  {
+    header: "Contact",
+    component: <Contact />,
   },
   {
     header: "Resume",
