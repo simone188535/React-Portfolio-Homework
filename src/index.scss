@@ -24,6 +24,10 @@ body {
     height: 100%;
 }
 
+body {
+    background-color: var(--orange-white) !important;
+}
+
 .nav-bar {
     background-color: var(--orange-red-alpha);
     color: var(--white);
@@ -36,10 +40,23 @@ body {
         cursor: pointer;
 
         .nav-item {
+
             &.active,
             &:hover {
                 text-decoration: underline;
             }
         }
     }
+}
+.body-content {
+    .page-header {
+        color: var(--orange);
+    }
+    .portfolio {
+        .image-thumbnail {
+            width: 150px;
+            border-radius: 50%;
+        }
+    }
+
 }

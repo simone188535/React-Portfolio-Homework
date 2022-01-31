@@ -24,8 +24,8 @@ const displayDetails = [
 
 const Project = ({ displayContent }) => {
   return (
-    <main className="container h-100 min-vh-100">
-      <h2>{displayDetails[displayContent].header}</h2>
+    <main className="container h-100 min-vh-100 my-3 body-content">
+      <h2 className="page-header">{displayDetails[displayContent].header}</h2>
       {displayDetails[displayContent].component}
     </main>
   );
