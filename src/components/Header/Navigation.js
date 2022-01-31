@@ -1,20 +1,27 @@
 const Navigation = ({ displayContent, changeDisplayContent }) => {
+  const navItemText = ["About Me", "Portfolio", "Contact", "Resume"];
+  const navItems = navItemText.map(
+    (item, index) =>
+      index !== displayContent && (
+        <li className="nav-item mx-2" data-list-item-index={index} key={index}>
+          {item}
+        </li>
+      )
+  );
 
-    const listItemOnClick = (event) => {
-        let target = event.target; 
-        
-        if (target.matches('.nav-item')) {
-            const dataAttr = target.dataset.listItemIndex;
-            changeDisplayContent(dataAttr);
-        }
+  const listItemOnClick = (event) => {
+    let target = event.target;
+
+    if (target.matches(".nav-item")) {
+      const dataAttr = Number(target.dataset.listItemIndex);
+      changeDisplayContent(dataAttr);
     }
+  };
 
   return (
     <nav className="navbar navbar-expand-md navbar-light">
       <div className="container-fluid">
-        <span className="navbar-brand">
-          Simone Anthony
-        </span>
+        <span className="navbar-brand">Simone Anthony</span>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,20 +33,12 @@ const Navigation = ({ displayContent, changeDisplayContent }) => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-end" id="navbarToggler">
-          <ul className="navbar-nav" onClick={listItemOnClick}>
-            <li className="nav-item mx-2" data-list-item-index="0">
-                About Me
-            </li>
-            <li className="nav-item mx-2" data-list-item-index="1">
-                Portfolio
-            </li>
-            <li className="nav-item mx-2" data-list-item-index="2">
-                Contact
-            </li>
-            <li className="nav-item mx-2" data-list-item-index="3">
-                Resume
-            </li>
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarToggler"
+        >
+          <ul className="navbar-nav text-center" onClick={listItemOnClick}>
+            {navItems}
           </ul>
         </div>
       </div>
