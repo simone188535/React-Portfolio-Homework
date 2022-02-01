@@ -4,7 +4,7 @@
     --white: white;
     --black-alpha: rgba(0, 0, 0, .5);
     --orange: rgb(255, 152, 0);
-    --orange-alpha: rgba(255, 152, 0, 1);
+    --orange-alpha: rgb(255, 208, 0);
     --orange-red-alpha: rgba(255, 87, 81, 1);
     --dark-orange-red-alpha: rgba(255, 81, 87, 1);
     --orange-white: rgba(249, 245, 241, 1);
@@ -43,6 +43,7 @@ body {
 
             &.active,
             &:hover {
+                color: var(--off-black);
                 text-decoration: underline;
             }
         }
