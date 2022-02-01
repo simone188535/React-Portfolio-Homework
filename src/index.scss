@@ -73,6 +73,12 @@ body {
 
 }
 
+.footer {
+    height: 70px;
+    color: var(--white);
+    background-color: var(--off-black);
+}
+
 @media only screen and (min-width: 768px) {
     .body-content {
         .portfolio {
