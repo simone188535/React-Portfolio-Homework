@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Personal-Portfolio/static/css/main.b5548c17.css",
+    "main.js": "/Personal-Portfolio/static/js/main.9a9ee1c2.js",
+    "static/js/787.41cacfad.chunk.js": "/Personal-Portfolio/static/js/787.41cacfad.chunk.js",
+    "static/media/presidential-gallery.png": "/Personal-Portfolio/static/media/presidential-gallery.01f1cba09a8c08e8ad4d.png",
+    "static/media/weather-api-thumbnail.png": "/Personal-Portfolio/static/media/weather-api-thumbnail.f2a5ab5041469f6de0db.png",
+    "static/media/employee-tracker.png": "/Personal-Portfolio/static/media/employee-tracker.7e1f0eb78e6cc6ad3aa2.png",
+    "static/media/ui-ux-tips.png": "/Personal-Portfolio/static/media/ui-ux-tips.16057a8727b928a9d41b.png",
+    "static/media/work-day-scheduler.png": "/Personal-Portfolio/static/media/work-day-scheduler.e0d16748480e531d6c9a.png",
+    "static/media/note-taker.png": "/Personal-Portfolio/static/media/note-taker.6bcde7a8b6af139e186d.png",
+    "static/media/Resume.pdf": "/Personal-Portfolio/static/media/Resume.0973729a8a87dcd235f4.pdf",
+    "static/media/me.jpeg": "/Personal-Portfolio/static/media/me.7568f0bf66f043642ca8.jpeg",
+    "index.html": "/Personal-Portfolio/index.html",
+    "main.b5548c17.css.map": "/Personal-Portfolio/static/css/main.b5548c17.css.map",
+    "main.9a9ee1c2.js.map": "/Personal-Portfolio/static/js/main.9a9ee1c2.js.map",
+    "787.41cacfad.chunk.js.map": "/Personal-Portfolio/static/js/787.41cacfad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5548c17.css",
+    "static/js/main.9a9ee1c2.js"
+  ]
+}
