@@ -49,10 +49,12 @@ body {
         }
     }
 }
+
 .body-content {
     .page-header {
         color: var(--orange);
     }
+
     .about-me {
         .image-thumbnail {
             width: 150px;
@@ -62,7 +64,15 @@ body {
 
     .portfolio {
         &-img {
-        height: 165px;
+            height: 165px;
+        }
+
+        .portfolio-link {
+            color: var(--off-black);
+
+            &:not(:hover) {
+                text-decoration: none;
+            }
         }
     }
 
@@ -81,6 +91,7 @@ body {
 .footer {
     height: 70px;
     background-color: var(--off-black);
+
     a {
         color: var(--white);
     }
@@ -90,12 +101,12 @@ body {
     .body-content {
         .portfolio {
             &-img {
-            height: 250px;
+                height: 250px;
             }
 
             max-width: 900px;
             margin: 0 auto;
         }
-    
+
     }
 }
