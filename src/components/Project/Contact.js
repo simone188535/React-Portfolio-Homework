@@ -34,7 +34,7 @@ const Contact = () => {
           <Field name="message" as="textarea" className="d-block w-100 my-2"/>
           <ErrorMessage component="div" name="message" className="text-danger"/>
 
-          <button type="submit" class="btn btn-danger mt-1">Submit</button>
+          <button type="submit" className="btn btn-danger mt-1">Submit</button>
         </Form>
       </Formik>
     </section>
